@@ -4,84 +4,179 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">Quiz App</h1>
     </header>
-    <main></main>
-    <footer>
-      <div class="footer">
-        <nav>
-          <ul class="footer__nav">
-            <li>
-              <a href="/"
-                ><svg
-                  class="footer__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-house-icon lucide-house"
-                >
-                  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
-                  <path
-                    d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a href="/bookmarks.html"
-                ><svg
-                  class="footer__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-bookmark-icon lucide-bookmark"
-                >
-                  <path
-                    d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a href="/profile.html"
-                ><svg
-                  class="footer__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-circle-user-icon lucide-circle-user"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <circle cx="12" cy="10" r="3" />
-                  <path
-                    d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"
-                  /></svg
-              ></a>
+    <main>
+      <section class="profile-header" aria-labelledby="profile-header__name">
+        <div class="profile-header__image-container">
+          <img
+            src="https://avatars.githubusercontent.com/u/4109582?v=4&size=128"
+            alt="Profilbild von [Name]"
+            class="profile-header__image"
+          />
+        </div>
+        <div class="profile-header__info">
+          <h2 id="profile-header__name" class="profile-header__name">
+            Gregor Paul
+          </h2>
+          <p class="profile-header__about">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequuntur esse nostrum vero a repudiandae aspernatur odio.
+          </p>
+        </div>
+      </section>
+
+      <section class="profile-stats">
+        <div class="profile-stats__item">
+          <span class="profile-stats__icon" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-help-icon lucide-circle-help"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+              <path d="M12 17h.01" />
+            </svg>
+          </span>
+          <span
+            class="profile-stats__lable"
+            aria-label="Count of questions answered"
+            >Created Questions</span
+          >
+          <span class="profile-stats__number">12</span>
+        </div>
+        <div class="profile-stats__item">
+          <span class="profile-stats__icon" aria-hidden="true">
+            <svg
+              class="card__bookmark__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-icon lucide-bookmark"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </span>
+          <span class="profile-stats__label" aria-label="Count of bookmarks"
+            >Bookmarks</span
+          >
+          <span class="profile-stats__number">4</span>
+        </div>
+      </section>
+
+      <section class="profile-settings">
+        <nav class="profile-settings__nav" aria-label="Profile Settings">
+          <ul class="profile-settings__list">
+            <li class="profile-settings__item">
+              <a href="/settings.html" class="profile-settings__link"
+                >Settings</a
+              >
             </li>
           </ul>
         </nav>
-      </div>
+        <div class="profile-settings__darkmode-toggle darkmode-toggle">
+          <label for="darkmode-switch" class="darkmode-toggle__label"
+            >Darkmode</label
+          >
+          <input
+            type="checkbox"
+            id="darkmode-switch"
+            name="darkmode"
+            class="darkmode-toggle__input"
+            aria-label="Darkmode umschalten"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__nav" aria-label="Footer Navigation">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="/" class="footer__link" aria-label="Home">
+              <svg
+                class="footer__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                <path
+                  d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              href="/bookmarks.html"
+              class="footer__link"
+              aria-label="Bookmarks"
+            >
+              <svg
+                class="footer__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="/profile.html" class="footer__link" aria-label="Profile">
+              <svg
+                class="footer__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="10" r="3" />
+                <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>

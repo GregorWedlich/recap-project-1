@@ -11,77 +11,115 @@
     <header class="header">
       <h1 class="header__title">Quiz App</h1>
     </header>
-    <main></main>
-    <footer>
-      <div class="footer">
-        <nav>
-          <ul class="footer__nav">
-            <li>
-              <a href="/"
-                ><svg
-                  class="footer__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-house-icon lucide-house"
-                >
-                  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
-                  <path
-                    d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a href="/bookmarks.html"
-                ><svg
-                  class="footer__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-bookmark-icon lucide-bookmark"
-                >
-                  <path
-                    d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a href="/profile.html"
-                ><svg
-                  class="footer__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-circle-user-icon lucide-circle-user"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <circle cx="12" cy="10" r="3" />
-                  <path
-                    d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"
-                  /></svg
-              ></a>
-            </li>
-          </ul>
-        </nav>
+    <main>
+      <div class="card">
+        <h2 class="card__question">Some question ...?</h2>
+
+        <button class="button" aria-expanded="false" aria-label="Show Answer">
+          Show Answer
+        </button>
+
+        <!-- Antworttext, erst mal versteckt -->
+        <p class="card__answer" id="answer" hidden>Answer</p>
+
+        <button class="card__bookmark" aria-label="Bookmark this question">
+          <a href="#"
+            ><svg
+              class="card__bookmark__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-icon lucide-bookmark"
+            >
+              <path
+                d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
+              /></svg
+          ></a>
+        </button>
+
+        <div class="card__tags">
+          <span class="tag">#CSS</span>
+          <span class="tag">#Flexbox</span>
+        </div>
       </div>
+    </main>
+    <footer class="footer">
+      <nav class="footer__nav" aria-label="Footer Navigation">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="/" class="footer__link" aria-label="Home">
+              <svg
+                class="footer__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                <path
+                  d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              href="/bookmarks.html"
+              class="footer__link"
+              aria-label="Bookmark"
+            >
+              <svg
+                class="footer__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="/profile.html" class="footer__link" aria-label="Profile">
+              <svg
+                class="footer__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="10" r="3" />
+                <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
