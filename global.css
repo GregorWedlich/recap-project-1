@@ -17,6 +17,11 @@ body {
   --primary-color: #3498db;
   --secondary-color: #2ecc71;
   --accent-color: #e74c3c;
+  --background-card-color: #f9f9f9;
+  --background-card-secondary-color: #e0e0e0;
+
+  --text-color: #333;
+  --text-color-secondary: #666;
 }
 
 ul {
