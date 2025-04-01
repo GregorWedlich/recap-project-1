@@ -27,4 +27,9 @@
   color: white; /* oder jede andere Farbe */
   width: 2.5rem;
   height: auto;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--accent-color);
+  }
 }
