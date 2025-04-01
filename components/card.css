@@ -1,4 +1,4 @@
-.question-card {
+.card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   margin: 1rem;
 }
 
-.question-card__bookmark {
+.card__bookmark {
   position: absolute;
   top: -0.5rem;
   right: 0.5rem;
@@ -22,14 +22,14 @@
   }
 }
 
-.question-card__bookmark__icon {
+.card__bookmark__icon {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
   color: var(--text-color);
 }
 
-.question-card__tags {
+.card__tags {
   margin-top: 1rem;
   display: flex;
   justify-content: flex-start;
@@ -38,7 +38,7 @@
   gap: 0.5rem;
 }
 
-.question-card__tags > .tag {
+.card__tags > .tag {
   background-color: var(--background-card-secondary-color);
   border-radius: 3px;
   padding: 0.2rem 0.5rem;

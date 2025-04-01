@@ -1,0 +1,53 @@
+/* About me */
+.profile-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.profile-header__image-container {
+  flex-shrink: 0;
+}
+
+.profile-header__image {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Stats */
+.profile-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.profile-stats__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  border-radius: 9999px;
+}
+
+.profile-stats__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Settings */
+.profile-settings {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
