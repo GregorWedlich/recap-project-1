@@ -14,42 +14,76 @@
       <div class="question-card">
         <h2 class="question-card__question">Some question ...?</h2>
 
-        <div class="question-card__tags">
-          <span class="tag">Answer 1</span>
-          <span class="tag">Answer 2</span>
-        </div>
-
-        <button class="question-card__show-answer">Show Answer</button>
+        <button class="button">Show Answer</button>
 
         <!-- Antworttext, erst mal versteckt -->
-        <p class="question-card__answer" hidden>This is the correct answer.</p>
+        <p class="question-card__answer" hidden>Answer</p>
 
         <button
           class="question-card__bookmark"
           aria-label="Bookmark this question"
         >
-          🔖
+          <a href="#"
+            ><svg
+              class="question-card__bookmark__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-icon lucide-bookmark"
+            >
+              <path
+                d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
+              /></svg
+          ></a>
         </button>
+
+        <div class="question-card__tags">
+          <span class="tag">#CSS</span>
+          <span class="tag">#Flexbox</span>
+        </div>
       </div>
 
       <div class="question-card">
         <h2 class="question-card__question">Another question ...?</h2>
 
-        <div class="question-card__tags">
-          <span class="tag">Answer 1</span>
-          <span class="tag">Answer 2</span>
-        </div>
+        <button class="button">Show Answer</button>
 
-        <button class="question-card__show-answer">Show Answer</button>
-
-        <p class="question-card__answer" hidden>This is another answer.</p>
+        <p class="question-card__answer" hidden>Answer</p>
 
         <button
           class="question-card__bookmark"
           aria-label="Bookmark this question"
         >
-          🔖
+          <a href="#"
+            ><svg
+              class="question-card__bookmark__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-icon lucide-bookmark"
+            >
+              <path
+                d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
+              /></svg
+          ></a>
         </button>
+
+        <div class="question-card__tags">
+          <span class="tag">#CSS</span>
+          <span class="tag">#Flexbox</span>
+        </div>
       </div>
     </main>
     <footer>
