@@ -1,0 +1,30 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.footer__nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__icon {
+  color: white; /* oder jede andere Farbe */
+  width: 2.5rem;
+  height: auto;
+}
