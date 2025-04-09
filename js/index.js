@@ -4,6 +4,9 @@ const answerButton = document.querySelector('[data-js="answer__button"]');
 const answer = document.querySelector('[data-js="card__answer"]');
 const form = document.querySelector('[data-js="form"]');
 
+const textareaQuestion = document.getElementById("question");
+const textareAnswer = document.getElementById("answer");
+
 /*
 We need a if statement to check if the element exists before adding an event listener
 
@@ -44,6 +47,19 @@ if (form) {
     event.target.reset();
   });
 }
+
+textareaQuestion.addEventListener("input", (event) => {
+  const counterElement = document.querySelector(
+    '[data-js="question__counter"]'
+  );
+  // console.log(counterElement);
+  updateCounter(event.target, counterElement);
+});
+
+textareAnswer.addEventListener("input", (event) => {
+  const counterElement = document.querySelector('[data-js="answer__counter"]');
+  updateCounter(event.target, counterElement);
+});
 
 function createCard(data) {
   // card container
@@ -116,4 +132,10 @@ function createCard(data) {
   card.append(tagContainer);
 
   return card;
+}
+
+function updateCounter(textarea, counterElement) {
+  const max = 150;
+  const remaining = max - textarea.value.length;
+  counterElement.textContent = `${remaining} Characters left`;
 }

@@ -17,20 +17,30 @@
         <textarea
           class="form__textarea"
           name="question"
+          data-js="question"
           id="question"
           rows="4"
           cols="50"
+          maxlength="150"
           placeholder="Type your question here..."
         ></textarea>
+        <span class="char__counter" data-js="question__counter"
+          >150 characters left</span
+        >
         <label for="answer" class="form__label">Your answer: </label>
         <textarea
           class="form__textarea"
           name="answer"
+          data-js="answer"
           id="answer"
           rows="4"
           cols="50"
+          maxlength="150"
           placeholder="Type your answer here..."
         ></textarea>
+        <span class="char__counter" data-js="answer__counter"
+          >150 characters left</span
+        >
         <label for="tag" class="form__label">Tag: </label>
         <input
           type="text"
