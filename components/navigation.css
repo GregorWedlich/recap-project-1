@@ -10,21 +10,20 @@
   background-color: var(--primary-color);
 }
 
-.footer__nav {
+.footer__nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5rem;
 }
 
-.footer__nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
 .footer__icon {
-  color: white; /* oder jede andere Farbe */
+  color: white;
   width: 2.5rem;
   height: auto;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--accent-color);
+  }
 }
