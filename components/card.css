@@ -29,6 +29,10 @@
   color: var(--text-color);
 }
 
+.card__bookmark--active {
+  background-color: var(--accent-color);
+}
+
 .card__tags {
   margin-top: 1rem;
   display: flex;

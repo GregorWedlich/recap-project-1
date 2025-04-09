@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -14,11 +15,15 @@
       <div class="card">
         <h2 class="card__question">Some question ...?</h2>
 
-        <button class="button">Show Answer</button>
+        <button class="button" data-js="answer__button">Show Answer</button>
 
-        <p class="card__answer" hidden>Answer</p>
+        <p class="card__answer" data-js="card__answer" hidden>Answer</p>
 
-        <button class="card__bookmark" aria-label="Bookmark this question">
+        <button
+          class="card__bookmark"
+          aria-label="Bookmark this question"
+          data-js="card__bookmark"
+        >
           <a href="#"
             ><svg
               class="card__bookmark__icon"
