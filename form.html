@@ -12,80 +12,34 @@
       <h1 class="header__title">Quiz App</h1>
     </header>
     <main>
-      <div class="card">
-        <h2 class="card__question">Some question ...?</h2>
-
-        <button class="button" data-js="answer__button">Show Answer</button>
-
-        <p class="card__answer" data-js="card__answer" hidden>Answer</p>
-
-        <button
-          class="card__bookmark"
-          aria-label="Bookmark this question"
-          data-js="card__bookmark"
-        >
-          <a href="#"
-            ><svg
-              class="card__bookmark__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-bookmark-icon lucide-bookmark"
-            >
-              <path
-                d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
-              /></svg
-          ></a>
-        </button>
-
-        <div class="card__tags">
-          <span class="tag">#CSS</span>
-          <span class="tag">#Flexbox</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2 class="card__question">Another question ...?</h2>
-
-        <!-- Dynamic Aria for open and close status -->
-        <button class="button" aria-expanded="false" aria-controls="answer">
-          Show Answer
-        </button>
-
-        <p class="card__answer" id="answer" hidden>Answer</p>
-
-        <button class="card__bookmark" aria-label="Bookmark this question">
-          <a href="#"
-            ><svg
-              class="card__bookmark__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-bookmark-icon lucide-bookmark"
-            >
-              <path
-                d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
-              /></svg
-          ></a>
-        </button>
-
-        <div class="card__tags">
-          <span class="tag">#CSS</span>
-          <span class="tag">#Flexbox</span>
-        </div>
-      </div>
+      <form class="form__container">
+        <label for="question" class="form__label">Your question: </label>
+        <textarea
+          class="form__textarea"
+          name="question"
+          id="question"
+          rows="4"
+          cols="50"
+          placeholder="Type your question here..."
+        ></textarea>
+        <label for="answer" class="form__label">Your answer: </label>
+        <textarea
+          class="form__textarea"
+          name="answer"
+          id="answer"
+          rows="4"
+          cols="50"
+          placeholder="Type your answer here..."
+        ></textarea>
+        <label for="tag" class="form__label">Tag: </label>
+        <input
+          type="text"
+          id="tag"
+          class="form__input"
+          placeholder="Add a tag"
+        />
+        <button type="submit" class="button">Submit</button>
+      </form>
     </main>
     <footer class="footer">
       <nav class="footer__nav" aria-label="Footer Navigation">

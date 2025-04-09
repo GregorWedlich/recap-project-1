@@ -1,0 +1,25 @@
+.form__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 2rem;
+}
+
+.form__label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.form__textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--background-card-color);
+  font-size: 1rem;
+  resize: none;
+}
+
+.form__input {
+  padding: 0.5rem;
+  border: 1px solid var(--background-card-color);
+  font-size: 1rem;
+}

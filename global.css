@@ -27,3 +27,13 @@ body {
 ul {
   list-style: none;
 }
+
+/* Button style */
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
